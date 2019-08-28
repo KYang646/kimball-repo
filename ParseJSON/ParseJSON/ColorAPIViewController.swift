@@ -8,23 +8,49 @@
 
 import UIKit
 
-class ColorAPIViewController: UIViewController {
-
+class ColorAPIViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var ColorAPITableView: UITableView!
+    
+    var colorData = [Color]()
+        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ColorAPITableView.delegate = self
+        ColorAPITableView.dataSource = self
+        loadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func loadData() {
+        guard let pathToJSONFile = Bundle.main.path(forResource: "colorData", ofType: "json") else { fatalError()
+        }
+        let url = URL(fileURLWithPath: pathToJSONFile)
+        do{
+            let data = try Data(contentsOf: url)
+            self.colorData = try Color.getColorData(from: data)
+        } catch {
+            print(error)
+        }
+        
     }
-    */
+ 
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colorData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let colorInfo = colorData[indexPath.row]
+        let colorCell = ColorAPITableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
+        colorCell.textLabel?.text = colorData[indexPath.row].name.value
+        return colorCell
+    }
+    
+    /*
+   
+ */
 
 }
