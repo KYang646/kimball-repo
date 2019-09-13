@@ -10,72 +10,12 @@ import UIKit
 
 class SearchBarViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
-
-    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-    
-
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tableView: UITableView!
-    
-    var shows = [Shows]() {
-        didSet {
-            tableView.reloadData()
-            
-        }
-    }
-    
-    var searchTerm = "" {
-        didSet {
-            loadData()
-        }
-    }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
-        searchBar.delegate = self
-        searchBar.resignFirstResponder()
-    
-    
-        
-    func loadData() {
-        let urlStr = "http://api.tvmaze.com/search/shows?q=\(self.searchTerm)"
-        let completion: ([Shows]) -> Void = {(onlineShows: [Shows]) in
-            self.shows = onlineShows
-        }
-        ShowAPI.manager.getShow(from: urlStr, completionHandler: completion, errorHandler: {print($0)})
-    }
-}
-}
-
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shows.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let show = shows[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShowCell", for: indexPath)
@@ -105,8 +45,12 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
         }
         return cell
     }
-
-extension SearchBarViewController {
+    
+    var searchTerm = "" {
+        didSet {
+            loadData()
+        }
+    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchTerm = (searchBar.text?.components(separatedBy: " ").joined(separator: "%20"))!
@@ -115,4 +59,66 @@ extension SearchBarViewController {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchBar.endEditing(true)
     }
+
+    
+    
+    
+    
+    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //        <#code#>
+    //    }
+    //
+    //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //        <#code#>
+    //    }
+    
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var shows = [Shows]() {
+        didSet {
+            tableView.reloadData()
+            
+        }
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
+    
+    func loadData() {
+        let urlStr = "http://api.tvmaze.com/search/shows?q=\(self.searchTerm)"
+        let completion: ([Shows]) -> Void = {(onlineShows: [Shows]) in
+            self.shows = onlineShows
+        }
+        ShowAPI.manager.getShow(from: urlStr, completionHandler: completion, errorHandler: {print($0)})
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        searchBar.delegate = self
+        searchBar.resignFirstResponder()
+        
+        
+        
+        
+    }
 }
+
+
+
+
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return shows.count
+//    }
+
+
+
+// extension SearchBarViewController {
+
+
