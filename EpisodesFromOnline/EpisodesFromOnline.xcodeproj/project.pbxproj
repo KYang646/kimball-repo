@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7474AEFB2332C5A300B98282 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474AEFA2332C5A300B98282 /* URLHelper.swift */; };
 		748CF1E32322DF17006A1201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CF1E22322DF17006A1201 /* AppDelegate.swift */; };
 		748CF1E82322DF17006A1201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748CF1E62322DF17006A1201 /* Main.storyboard */; };
 		748CF1EA2322DF1C006A1201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748CF1E92322DF1C006A1201 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7474AEFA2332C5A300B98282 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		748CF1DF2322DF17006A1201 /* EpisodesFromOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpisodesFromOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748CF1E22322DF17006A1201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		748CF1E72322DF17006A1201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				748CF2162322F4AC006A1201 /* EpisodeGuideViewController.swift */,
 				748CF2142322F34D006A1201 /* SearchBarViewController.swift */,
 				748CF2122322F276006A1201 /* DetailViewController.swift */,
+				7474AEFA2332C5A300B98282 /* URLHelper.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				748CF2172322F4AC006A1201 /* EpisodeGuideViewController.swift in Sources */,
 				74B8916A232B51E300BE9013 /* ImageAPIClient.swift in Sources */,
 				748CF2132322F276006A1201 /* DetailViewController.swift in Sources */,
+				7474AEFB2332C5A300B98282 /* URLHelper.swift in Sources */,
 				74B89168232B4C5500BE9013 /* Show.swift in Sources */,
 				74B8916C232B55BC00BE9013 /* ShowsTableViewCell.swift in Sources */,
 				74B89166232AF4B800BE9013 /* NetworkHelper.swift in Sources */,

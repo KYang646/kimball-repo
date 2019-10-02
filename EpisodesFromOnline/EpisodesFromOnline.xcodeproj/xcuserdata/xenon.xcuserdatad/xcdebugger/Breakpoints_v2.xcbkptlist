@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "19B4CAFA-0B21-4117-A2E0-ADBC55530764"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+            timestampString = "590536382.610914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ShowsTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - 145d855b956d183a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.showImageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.660763"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - 4be6cb64dc2f2c4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.showImageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.664384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - fcacfbdc2222f33f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.showImageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.667341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - fb762126aedcfa66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.showImageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.6706361"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - 7dbed335adf2e6c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; EpisodesFromOnline.ShowsTableViewCell"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.673717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  uuid = "4E1FE6B4-788F-4B41-A65B-44681C653527 - 95e11e075d097032"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EpisodesFromOnline.ShowsTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EpisodesFromOnline.ShowsTableViewCell&gt;"
+                  moduleName = "EpisodesFromOnline"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xenon/Desktop/Lab3/EpisodesFromOnline/EpisodesFromOnline/ViewControllers/ShowsTableViewCell.swift"
+                  timestampString = "590535536.6776659"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

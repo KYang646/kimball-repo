@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ImageAPIClient {
+    
     //Singleton
     private init() {}
     static let manager = ImageAPIClient()
