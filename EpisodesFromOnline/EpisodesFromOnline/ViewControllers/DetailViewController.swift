@@ -23,7 +23,11 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.detImage.image = chosenEpisodeImage
+        self.detName.text = chosenEpisode.name
+        self.detSeason.text = "Season: \(chosenEpisode.season)"
+        self.detEpNum.text = "Episode: \(chosenEpisode.number)"
+        self.detTextView.text = chosenEpisode.summary?.replacingOccurrences(of: "<[^>]+>", with: "", options: String.CompareOptions.regularExpression, range: nil) ?? ""
        
     }
     
