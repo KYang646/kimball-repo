@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743B34B023463B08002A14BD /* EpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B34AF23463B08002A14BD /* EpTableViewCell.swift */; };
+		7447D57323467BDA004FDCD8 /* EpisodeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447D57223467BDA004FDCD8 /* EpisodeAPIClient.swift */; };
+		7447D57523467FF7004FDCD8 /* TVEpisodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447D57423467FF7004FDCD8 /* TVEpisodes.swift */; };
 		7474AEFB2332C5A300B98282 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474AEFA2332C5A300B98282 /* URLHelper.swift */; };
 		748CF1E32322DF17006A1201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CF1E22322DF17006A1201 /* AppDelegate.swift */; };
 		748CF1E82322DF17006A1201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748CF1E62322DF17006A1201 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		743B34AF23463B08002A14BD /* EpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpTableViewCell.swift; sourceTree = "<group>"; };
+		7447D57223467BDA004FDCD8 /* EpisodeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeAPIClient.swift; sourceTree = "<group>"; };
+		7447D57423467FF7004FDCD8 /* TVEpisodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVEpisodes.swift; sourceTree = "<group>"; };
 		7474AEFA2332C5A300B98282 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		748CF1DF2322DF17006A1201 /* EpisodesFromOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpisodesFromOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748CF1E22322DF17006A1201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		743B34B123463C22002A14BD /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				74B8916B232B55BC00BE9013 /* ShowsTableViewCell.swift */,
+				743B34AF23463B08002A14BD /* EpTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		748CF1D62322DF17006A1201 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +131,7 @@
 				748CF1E22322DF17006A1201 /* AppDelegate.swift */,
 				74B8916D232B563D00BE9013 /* ViewControllers */,
 				748CF1E62322DF17006A1201 /* Main.storyboard */,
+				743B34B123463C22002A14BD /* CustomCells */,
 				748CF1E92322DF1C006A1201 /* Assets.xcassets */,
 				748CF1EB2322DF1C006A1201 /* LaunchScreen.storyboard */,
 				748CF1EE2322DF1C006A1201 /* Info.plist */,
@@ -146,7 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				74B89169232B51E300BE9013 /* ImageAPIClient.swift */,
+				7447D57223467BDA004FDCD8 /* EpisodeAPIClient.swift */,
 				74B89162232AE05300BE9013 /* ShowAPIClient.swift */,
+				7447D57423467FF7004FDCD8 /* TVEpisodes.swift */,
 				74B89167232B4C5500BE9013 /* Show.swift */,
 				74B89165232AF4B800BE9013 /* NetworkHelper.swift */,
 			);
@@ -156,7 +174,6 @@
 		74B8916D232B563D00BE9013 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74B8916B232B55BC00BE9013 /* ShowsTableViewCell.swift */,
 				748CF2162322F4AC006A1201 /* EpisodeGuideViewController.swift */,
 				748CF2142322F34D006A1201 /* SearchBarViewController.swift */,
 				748CF2122322F276006A1201 /* DetailViewController.swift */,
@@ -300,12 +317,15 @@
 				748CF2152322F34D006A1201 /* SearchBarViewController.swift in Sources */,
 				748CF2172322F4AC006A1201 /* EpisodeGuideViewController.swift in Sources */,
 				74B8916A232B51E300BE9013 /* ImageAPIClient.swift in Sources */,
+				743B34B023463B08002A14BD /* EpTableViewCell.swift in Sources */,
 				748CF2132322F276006A1201 /* DetailViewController.swift in Sources */,
 				7474AEFB2332C5A300B98282 /* URLHelper.swift in Sources */,
+				7447D57523467FF7004FDCD8 /* TVEpisodes.swift in Sources */,
 				74B89168232B4C5500BE9013 /* Show.swift in Sources */,
 				74B8916C232B55BC00BE9013 /* ShowsTableViewCell.swift in Sources */,
 				74B89166232AF4B800BE9013 /* NetworkHelper.swift in Sources */,
 				74B89163232AE05300BE9013 /* ShowAPIClient.swift in Sources */,
+				7447D57323467BDA004FDCD8 /* EpisodeAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

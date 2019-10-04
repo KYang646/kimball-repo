@@ -10,9 +10,6 @@ import UIKit
 
 class SearchBarViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
    
-    
-  
-
     var shows = [Shows]() {
         didSet {
             tableView.reloadData()
@@ -43,8 +40,6 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
-       
-        
     }
     
     func loadData(url: String) {
@@ -61,10 +56,20 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
             }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let destination = segue.destination as? EpisodeGuideViewController,
+            let selectedShowIndex = tableView.indexPathForSelectedRow else { return
+        }
+        
+        destination.chosenShow = shows[selectedShowIndex.row].show.id
+}
+
     
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchTerm = searchBar.text
+        
     }
     
 
@@ -83,7 +88,7 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
         
         cell.nameLabel.text = show.show.name
         cell.ratingLabel.text = "Rating: \(show.show.rating?.average?.description ?? "None")"
-        //cell.showImageView?.image = nil
+        cell.showImageView?.image = nil
        
         
         if let imageURL = show.show.image?.original {

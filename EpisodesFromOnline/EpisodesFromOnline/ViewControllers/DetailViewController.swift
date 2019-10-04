@@ -10,6 +10,17 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    
+    @IBOutlet weak var detImage: UIImageView!
+    @IBOutlet weak var detName: UILabel!
+    @IBOutlet weak var detSeason: UILabel!
+    @IBOutlet weak var detEpNum: UILabel!
+    @IBOutlet weak var detTextView: UITextView!
+    
+    var chosenEpisode: Episode!
+    var chosenEpisodeImage: UIImage!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
