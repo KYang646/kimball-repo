@@ -12,7 +12,7 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
    
     var shows = [Shows]() {
         didSet {
-            tableView.reloadData()
+           tableView.reloadData()
             
         }
     }
@@ -112,10 +112,3 @@ class SearchBarViewController: UIViewController, UITableViewDataSource, UISearch
     
   
 }
-
-
-
-
-
-
-
